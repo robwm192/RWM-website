@@ -3,12 +3,12 @@
     font-family: Tahoma;
     display: flex;
     background-image: linear-gradient(45deg, rgba(58, 58, 58, 0.33), rgba(58, 58, 192, 0.33));
-    background-size: cover;
-    align-self: flex;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 * {
-    padding: 1rem,;
+    padding: 1rem;
     margin: 1rem;
     box-sizing: border-box;
 }
