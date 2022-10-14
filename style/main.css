@@ -2,47 +2,144 @@
     font-size: 14px;
     font-family: Tahoma;
     display: flex;
-    background-image: linear-gradient(45deg, rgba(58, 58, 58, 0.33), rgba(58, 58, 192, 0.33));
+    background-image: linear-gradient(225deg, rgba(255, 192, 58, 0.46), rgba(58, 58, 220, 0.32));
     background-size: auto;
     background-repeat: no-repeat;
+    height: auto;
+    width: auto;
 }
 
 * {
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0.8rem;
     box-sizing: border-box;
+    text-align: left;
 }
 
-h1 {
+button {
+    all: unset;
+}
+
+@media (max-width: 450px) {
+    /* conditionally change styles when the viewport is under 450px */
+    div {
+        display: block;
+    }
+}
+
+.main {
+    margin-left: 222px; /* Same as the width of the sidebar */
+    padding: 20px 40px;
+}
+
+/* from - https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    background-image: linear-gradient(135deg, rgba(255, 192, 58, 0.32), rgba(58, 58, 220, 0.23));
+    background-blend-mode: darken;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 222px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 4px 4px 6px 16px;
+    text-align: left; 
+    text-decoration: solid;
+    font-size: 1.5rem;
+    color: rgba(58, 58, 58, 0.92);
+    display: block;
+}
+
+.sidenav a1 {
+    padding: 4px 4px 6px 16px;
+    text-align: left; 
+    text-decoration: solid;
+    font-size: 1.5rem;
     font-weight: bold;
+    color: rgba(58, 58, 58, 0.92);
+    display: block;
+}
+
+.sidenav a2 {
+    padding: 4px 4px 6px 16px;
+    text-align: left; 
+    text-decoration: solid;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: rgba(58, 58, 192, 0.92);
+    display: block;
+}
+
+.sidenav aext {
+    padding: 4x 4px 6px 16px;
+    text-align: left; 
+    text-decoration: solid;
+    font-size: 1.5rem;
+    font-style: oblique;
+    color: rgba(58, 58, 140, 0.92);
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav a1:hover {
+    color: #f1f1f1;
+}
+
+.sidenav a1:hover {
+    color: #f1f1f1;
+}
+
+.sidenav aext:hover {
+    color: #481e1e;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .sidenav a1 {font-size: 18px;}
+    .sidenav a2 {font-size: 18px;}
+}
+
+.font1 {
+    font-weight: 800;
     color: rgba(58, 58, 192, 0.92);
     font-size: 3rem;
 }
 
-h2 {
-    font-weight: bold;
+.font2 {
+    font-weight: 800;
     color: rgba(97, 97, 192, 0.92);
+    font-size: 2.5rem;
+}
+
+.font3 {
+    font-weight: 600;
+    color: rgba(58, 58, 58, 0.92);
     font-size: 2rem;
 }
 
-h3 {
-    color: rgba(58, 58, 58, 0.83);
+.font4 {
+    font-weight: 600;
+    color: rgba(58, 58, 58, 0.92);
     font-size: 1.5rem;
-}
-
-h4 {
-    color: rgba(58, 58, 58, 0.83);
-    font-size: 1.25rem;
 }
 
 p {
-    color: rgba(58, 58, 58, 0.83);
-    font-size: 1.1rem;
-    padding-bottom: 3%;
-}
-
-hyperlinks {
-    padding-top: 2rem;
-    color: rgba(58, 58, 58, 0.83);
-    font-size: 1.5rem;
+    color: rgba(58, 58, 58, 0.92);
+    font-size: 1.25rem;
 }
