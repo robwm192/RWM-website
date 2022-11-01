@@ -25,12 +25,23 @@
   position: fixed;
   background-image: black;
   background-size: auto;
-  height: 100px;
+  height: 100%;
   width: 222px;
   z-index: 1;
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
 }
 
 button {
+  all: unset;
+}
+
+#buttonshow {
+  all: unset;
+}
+
+#buttonhide {
   all: unset;
 }
 
@@ -79,7 +90,7 @@ button {
   display: block;
 }
 
-.sidenav a1 {
+.sidenav a.one {
   padding: 4px 4px 6px 16px;
   text-align: left;
   text-decoration: solid;
@@ -89,7 +100,7 @@ button {
   display: block;
 }
 
-.sidenav a2 {
+.sidenav a.two {
   padding: 4px 4px 6px 16px;
   text-align: left;
   text-decoration: solid;
@@ -100,8 +111,8 @@ button {
   display: block;
 }
 
-.sidenav aext {
-  padding: 4x 4px 6px 16px;
+.sidenav a.ext {
+  padding: 4px 4px 6px 16px;
   text-align: left;
   text-decoration: solid;
   font-size: 1.5rem;
@@ -115,15 +126,15 @@ button {
   color: #f1f1f1;
 }
 
-.sidenav a1:hover {
+.sidenav a.one:hover {
   color: #f1f1f1;
 }
 
-.sidenav a1:hover {
+.sidenav a.two:hover {
   color: #f1f1f1;
 }
 
-.sidenav aext:hover {
+.sidenav a.ext:hover {
   color: #481e1e;
 }
 
@@ -135,10 +146,13 @@ button {
   .sidenav a {
     font-size: 18px;
   }
-  .sidenav a1 {
+  .sidenav a.one {
     font-size: 18px;
   }
-  .sidenav a2 {
+  .sidenav a.two {
+    font-size: 18px;
+  }
+  .sidenav a.ext {
     font-size: 18px;
   }
 }
